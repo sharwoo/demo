@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>控制台</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .col-title {
+            display: flex;
+            justify-content: space-around;
+            height: 45px;
+            line-height: 45px;
+            width: 100%;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        .col-title span {
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .col-title span:last-child {
+            margin-left: -1px;
+        }
+
+        .col-title .active {
+            border-bottom: 2px solid #f90;
+            color: #f90;
+        }
+
+        .col-title .active a {
+            color: #f90;
+        }
+
+        .col-title a {
+            color: #a8a8a8;
+            text-decoration: none;
+        }
+        .main{
+            width: 95%;
+            margin: 15px auto;
+            background: #fff;
+            padding: 20px;
+            min-height: 400px;
+        }
+        .form-ctrl{
+            display: flex;
+        }
+        .form-ctrl textarea{
+            border: 1px solid #e5e5e5;
+            min-height: 80px;
+            width: 90%;
+            resize: none;
+            padding: 5px;
+            outline: none;
+            font-size: 14px;
+        }
+        .form-ctrl button{
+            background: #f90;
+            border: none;
+            margin-left: 5px;
+            border-radius: 4px;
+            width: 40px;
+            color: #fff;
+            outline: none;
+        }
+        .code{
+            width: 65%;
+            margin: 20% auto;
+            text-align: center;
+        }
+        .code img{
+            display: block;
+            width: 100%;
+        }
+        .code span{
+            font-size: 16px;
+        }
+        #submit {
+            width: 98%;
+            position: fixed;
+            padding: 8px 0;
+            bottom: 5px;
+            left: 0;
+            line-height: 30px;
+            background: #f90;
+            font-size: 16px;
+            color: #fff;
+            border-radius: 5px;
+            -webkit-appearance: none;
+            appearance: none;
+            border: 1px solid #ccc
+            }
+    </style>
+</head>
+
+<body style="background:#f9f9f9">
+    <div class="col-title">
+        <span><a href="/E3AFED0047B08059D0FADA10F400C1E5/FA71F">列表</a></span>
+        <span><a href="/E3AFED0047B08059D0FADA10F400C1E5/fortune">说明</a></span>
+        <span class="active"><a href="/E3AFED0047B08059D0FADA10F400C1E5/address">地址</a></span>
+    </div>
+    <div class="main">
+        <div class="form-ctrl">
+            <!-- textarea标签之间的文本不换行 -->
+            <textarea name="" id="" placeholder="">https://www.sxys168.com/?tn=93006350_hao_pg_pg&rsv_dl=0_cont_hao123_top_10&rsf=16917</textarea>
+            <button type="button">复<br>制</button>
+        </div>
+        <div class="code">
+            <img src="http://qr.liantu.com/api.php?text=https://www.baidu.com" alt="">
+            <span>长按保存二维码</span>
+        </div>
+    </div>
+    <input type="submit" name="submit" id="submit" value="重新生成" />
+</body>
+
+</html>
